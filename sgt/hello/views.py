@@ -3,11 +3,9 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def index(request):
-    return HttpResponse("hello world")
-
-def seinao(request):
-    return HttpResponse("oi")
-
-def naosei(request):
-    return HttpResponse("io")  
+def index(request, name):
+    return render(request, "index.html", {
+        "name": name.capitalize()
+    })
+def greet(request, name):
+    return HttpResponse(f'hello, {name}')
