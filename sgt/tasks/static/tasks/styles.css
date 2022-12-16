@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: aliceblue;
+}
+h1{
+    font-family: sans-serif;
+}
+
+a{
+    color: blue;
+    padding: 15px;
+}

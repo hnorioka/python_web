@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "tasks/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+<h1>Tasks:</h1>
+<!-- <a href="{% url 'tasks:index' %}">View Tasks</a><br> -->
+<a href="{% url 'tasks:add' %}">Add a New Task</a>
+<ul class="lista">
+    {% for task in tasks %}
+        <li>{{ task }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
